@@ -260,7 +260,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
     }));
   };
 
-  const allPersonas = [...PERSONAS, ...userPersonas.filter(p => !PERSONAS.some(base => base.id === p.id))];
+  const allPersonas = [...PERSONAS, ...userPersonas?filter(p => !PERSONAS.some(base => base.id === p.id))];
 
   const previewVoice = (e: React.MouseEvent, personaId: string) => {
     e.stopPropagation();
