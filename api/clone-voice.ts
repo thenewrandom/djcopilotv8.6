@@ -1,3 +1,4 @@
+import { VercelRequest, VercelResponse } from'@vercel/node';
 export const config = { api: { bodyParser: false } };
 
 type Part = { name: string; filename?: string; contentType?: string; data: Buffer };
